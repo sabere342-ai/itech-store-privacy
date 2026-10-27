@@ -1,0 +1,664 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>سياسة الخصوصية — I Tech لإدارة المحلات</title>
+  <meta name="description" content="سياسة الخصوصية الرسمية لتطبيق I Tech لإدارة المحلات (I-Tech Store Management) — بيان معالجة البيانات، التخزين المحلي، المزامنة السحابية وحقوق حذف الحساب.">
+  <meta name="author" content="Islam Saber — I Tech">
+  <meta name="robots" content="index, follow">
+  <meta property="og:title" content="سياسة الخصوصية — I Tech لإدارة المحلات">
+  <meta property="og:description" content="سياسة الخصوصية الرسمية وأمان البيانات لتطبيق I Tech لإدارة المحلات ونقاط البيع.">
+  <meta property="og:type" content="website">
+  <meta name="theme-color" content="#0D47A1">
+
+  <style>
+    :root {
+      --primary: #0D47A1;
+      --primary-dark: #0A3880;
+      --primary-light: #E3F2FD;
+      --accent: #00897B;
+      --accent-light: #E0F2F1;
+      --accent-dark: #00695C;
+      --bg: #F8FAFC;
+      --card-bg: #FFFFFF;
+      --text-main: #1E293B;
+      --text-muted: #64748B;
+      --border: #E2E8F0;
+      --danger: #DC2626;
+      --danger-light: #FEE2E2;
+      --success: #16A34A;
+      --shadow-sm: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
+      --shadow-md: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -2px rgba(0, 0, 0, 0.1);
+      --radius: 12px;
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, Tahoma, sans-serif;
+      background-color: var(--bg);
+      color: var(--text-main);
+      line-height: 1.8;
+      font-size: 16px;
+      padding: 0;
+      margin: 0;
+      direction: rtl;
+      text-align: right;
+      -webkit-font-smoothing: antialiased;
+    }
+
+    a {
+      color: var(--primary);
+      text-decoration: none;
+      transition: color 0.2s ease;
+    }
+
+    a:hover, a:focus {
+      color: var(--primary-dark);
+      text-decoration: underline;
+    }
+
+    .header-bar {
+      background: linear-gradient(135deg, var(--primary) 0%, var(--primary-dark) 100%);
+      color: #FFFFFF;
+      padding: 40px 20px;
+      text-align: center;
+      border-bottom: 4px solid var(--accent);
+    }
+
+    .header-container {
+      max-width: 900px;
+      margin: 0 auto;
+    }
+
+    .app-badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      background: rgba(255, 255, 255, 0.15);
+      padding: 6px 16px;
+      border-radius: 50px;
+      font-size: 14px;
+      font-weight: 500;
+      margin-bottom: 16px;
+      backdrop-filter: blur(4px);
+    }
+
+    .app-badge svg {
+      width: 18px;
+      height: 18px;
+      fill: currentColor;
+    }
+
+    h1.page-title {
+      font-size: 30px;
+      font-weight: 800;
+      line-height: 1.3;
+      margin-bottom: 10px;
+    }
+
+    .english-title {
+      font-size: 18px;
+      font-weight: 400;
+      opacity: 0.9;
+      margin-bottom: 20px;
+      letter-spacing: 0.5px;
+      direction: ltr;
+      display: inline-block;
+    }
+
+    .meta-pills {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 10px;
+      margin-top: 15px;
+    }
+
+    .pill {
+      background: rgba(255, 255, 255, 0.2);
+      padding: 4px 12px;
+      border-radius: 6px;
+      font-size: 13px;
+    }
+
+    .container {
+      max-width: 900px;
+      margin: 0 auto;
+      padding: 30px 20px 60px 20px;
+    }
+
+    .summary-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 16px;
+      margin-bottom: 35px;
+    }
+
+    .summary-card {
+      background: var(--card-bg);
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      padding: 20px;
+      box-shadow: var(--shadow-sm);
+      transition: transform 0.2s ease, box-shadow 0.2s ease;
+    }
+
+    .summary-card:hover {
+      transform: translateY(-2px);
+      box-shadow: var(--shadow-md);
+    }
+
+    .summary-card .icon {
+      font-size: 28px;
+      margin-bottom: 10px;
+      display: inline-block;
+    }
+
+    .summary-card h3 {
+      font-size: 16px;
+      color: var(--primary);
+      margin-bottom: 6px;
+      font-weight: 700;
+    }
+
+    .summary-card p {
+      font-size: 13.5px;
+      color: var(--text-muted);
+      line-height: 1.5;
+    }
+
+    .toc {
+      background: var(--primary-light);
+      border-right: 4px solid var(--primary);
+      border-radius: 8px;
+      padding: 20px;
+      margin-bottom: 35px;
+    }
+
+    .toc h2 {
+      font-size: 17px;
+      color: var(--primary-dark);
+      margin-bottom: 12px;
+      font-weight: 700;
+    }
+
+    .toc ol {
+      margin-right: 22px;
+    }
+
+    .toc li {
+      margin-bottom: 6px;
+      font-size: 14.5px;
+    }
+
+    .section {
+      background: var(--card-bg);
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      padding: 28px;
+      margin-bottom: 24px;
+      box-shadow: var(--shadow-sm);
+    }
+
+    .section h2 {
+      font-size: 20px;
+      color: var(--primary);
+      margin-bottom: 16px;
+      padding-bottom: 10px;
+      border-bottom: 2px solid var(--border);
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+
+    .section h3 {
+      font-size: 17px;
+      color: var(--text-main);
+      margin: 18px 0 10px 0;
+      font-weight: 700;
+    }
+
+    .section p {
+      margin-bottom: 14px;
+      color: #334155;
+    }
+
+    .section ul, .section ol {
+      margin: 12px 24px 16px 0;
+    }
+
+    .section li {
+      margin-bottom: 8px;
+      color: #334155;
+    }
+
+    .highlight-box {
+      background: #F1F5F9;
+      border-right: 4px solid var(--accent);
+      padding: 16px;
+      border-radius: 6px;
+      margin: 16px 0;
+      font-size: 14.5px;
+    }
+
+    .warning-box {
+      background: var(--danger-light);
+      border-right: 4px solid var(--danger);
+      color: #991B1B;
+      padding: 16px;
+      border-radius: 6px;
+      margin: 16px 0;
+      font-size: 14.5px;
+    }
+
+    .table-container {
+      overflow-x: auto;
+      margin: 18px 0;
+      border-radius: 8px;
+      border: 1px solid var(--border);
+    }
+
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      font-size: 14px;
+      text-align: right;
+    }
+
+    th {
+      background: #F8FAFC;
+      color: var(--text-main);
+      font-weight: 700;
+      padding: 12px 14px;
+      border-bottom: 1px solid var(--border);
+    }
+
+    td {
+      padding: 12px 14px;
+      border-bottom: 1px solid var(--border);
+      color: #475569;
+    }
+
+    tr:last-child td {
+      border-bottom: none;
+    }
+
+    .contact-card {
+      background: linear-gradient(to bottom, #FFFFFF, #F8FAFC);
+      border: 2px solid var(--accent);
+      border-radius: var(--radius);
+      padding: 24px;
+      margin-top: 15px;
+    }
+
+    .contact-list {
+      list-style: none;
+      margin: 12px 0 0 0;
+      padding: 0;
+    }
+
+    .contact-list li {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      margin-bottom: 12px;
+      font-size: 15px;
+    }
+
+    .contact-list strong {
+      min-width: 140px;
+      color: var(--text-main);
+    }
+
+    .footer {
+      background: #0F172A;
+      color: #94A3B8;
+      padding: 30px 20px;
+      text-align: center;
+      font-size: 13.5px;
+      border-top: 1px solid #1E293B;
+    }
+
+    .footer p {
+      margin-bottom: 8px;
+    }
+
+    .footer a {
+      color: #38BDF8;
+    }
+
+    @media (max-width: 640px) {
+      .header-bar {
+        padding: 30px 16px;
+      }
+      h1.page-title {
+        font-size: 24px;
+      }
+      .english-title {
+        font-size: 15px;
+      }
+      .section {
+        padding: 20px 16px;
+      }
+      .contact-list li {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 4px;
+      }
+      .contact-list strong {
+        min-width: unset;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- رأس الصفحة -->
+  <header class="header-bar">
+    <div class="header-container">
+      <div class="app-badge">
+        <svg viewBox="0 0 24 24">
+          <path d="M12 1L3 5v6c0 5.55 3.84 10.74 9 12 5.16-1.26 9-6.45 9-12V5l-9-4zm0 10.99h7c-.53 4.12-3.28 7.79-7 8.94V12H5V6.3l7-3.11v8.8z"/>
+        </svg>
+        <span>سياسة الخصوصية الرسمية</span>
+      </div>
+      <h1 class="page-title">I Tech لإدارة المحلات</h1>
+      <div class="english-title">I-Tech Store Management — Privacy Policy</div>
+      
+      <div class="meta-pills">
+        <span class="pill"><strong>معرّف الحزمة:</strong> com.itech.storemanagement</span>
+        <span class="pill"><strong>تاريخ السريان:</strong> 28 أكتوبر 2026</span>
+        <span class="pill"><strong>آخر تحديث:</strong> 28 أكتوبر 2026</span>
+        <span class="pill"><strong>الإصدار:</strong> v1.0.1+1</span>
+      </div>
+    </div>
+  </header>
+
+  <!-- المحتوى الرئيسي -->
+  <main class="container">
+
+    <!-- بطاقات الملخص السريع -->
+    <div class="summary-grid">
+      <div class="summary-card">
+        <span class="icon">💾</span>
+        <h3>تخزين محلي آمن</h3>
+        <p>تُحفظ كافة العمليات في قاعدة بيانات SQLite داخل الحاوية الآمنة للتطبيق (Sandbox) بنظام Android.</p>
+      </div>
+
+      <div class="summary-card">
+        <span class="icon">🔒</span>
+        <h3>تشفير الاتصال السحابي</h3>
+        <p>جميع عمليات المزامنة مع الخوادم السحابية مشفرة ببروتوكولات HTTPS وTLS 1.3 المعتمدة دولياً.</p>
+      </div>
+
+      <div class="summary-card">
+        <span class="icon">🚫</span>
+        <h3>عدم بيع البيانات</h3>
+        <p>لا نقوم ببيع أو تأجير أو مشاركة أي بيانات تجارية أو شخصية مع معلنين أو وسطاء بيانات نهائياً.</p>
+      </div>
+
+      <div class="summary-card">
+        <span class="icon">🗑️</span>
+        <h3>حق حذف الحساب والبيانات</h3>
+        <p>يحق لمالك المتجر طلب شطب حسابه وجميع بياناته المخزنة سحابياً خلال مدة أقصاها 14 يوم عمل.</p>
+      </div>
+    </div>
+
+    <!-- جدول المحتويات -->
+    <nav class="toc" aria-label="فهرس السياسة">
+      <h2>فهرس سياسة الخصوصية:</h2>
+      <ol>
+        <li><a href="#intro">مقدمة ونطاق التطبيق</a></li>
+        <li><a href="#data-collection">البيانات التي نجمعها ونعالجها</a></li>
+        <li><a href="#data-usage">أغراض استخدام ومعالجة البيانات</a></li>
+        <li><a href="#security-storage">أمن البيانات والتخزين المعتمد</a></li>
+        <li><a href="#third-parties">مشاركة البيانات والأطراف الثالثة</a></li>
+        <li><a href="#deletion">حقوق المستخدم وسياسة حذف البيانات والحساب</a></li>
+        <li><a href="#google-play">الامتثال لسياسات متجر Google Play وحماية الأطفال</a></li>
+        <li><a href="#contact">بيانات الاتصال والتواصل الرسمي</a></li>
+      </ol>
+    </nav>
+
+    <!-- القسم الأول: المقدمة -->
+    <section id="intro" class="section">
+      <h2>1. مقدمة ونطاق التطبيق (Scope &amp; Introduction)</h2>
+      <p>
+        تلتزم إدارة <strong>I Tech لإدارة المحلات</strong> (المشار إليها بـ «نحن»، «التطبيق»، أو «الخدمة») بحماية خصوصية مستخدميها من أصحاب المتاجر ومسؤولي نقاط البيع (POS) وتأمين بياناتهم المحاسبية والتجارية.
+      </p>
+      <p>
+        يوضح هذا المستند بشفافية تامة طبيعة البيانات التي يتعامل معها التطبيق، ومكان تخزينها، وكيفية حمايتها، وإجراءات حذفها، بما يتوافق مع أحدث معايير متجر Google Play وسياسات أمان البيانات (Data Safety Guidelines 2024–2026).
+      </p>
+      <div class="highlight-box">
+        <strong>طبيعة عمل التطبيق:</strong>
+        يعتمد التطبيق فلسفة العمل دون الحاجة للاتصال بالإنترنت أولاً (<strong>Offline-First Architecture</strong>)، حيث تسير كافة العمليات من إصدار فواتير وإدارة مخزون ومصروفات محلياً على الجهاز، وتتم المزامنة السحابية فقط عند توفر الاتصال ورغبة صاحب المتجر.
+      </div>
+    </section>
+
+    <!-- القسم الثاني: البيانات المجمعة -->
+    <section id="data-collection" class="section">
+      <h2>2. البيانات التي نجمعها ونعالجها (Data We Collect)</h2>
+      <p>نحرص في تطبيق I Tech على تقليص جمع البيانات إلى أضيق نطاق تشغيلي ممكن (Data Minimization):</p>
+      
+      <h3>أ. بيانات الحساب والمصادقة (Account &amp; Auth Data)</h3>
+      <ul>
+        <li><strong>بيانات الدخول:</strong> اسم المستخدم، كلمة المرور المشفرة تجزئياً (Hashed Passwords)، ومعرف الجلسة.</li>
+        <li><strong>معرف المتجر:</strong> رمز المتجر الفريد (<code>shop_id</code>) ودور المستخدم (مالك، كاشير/بائع) لضمان عزل الصلاحيات.</li>
+      </ul>
+
+      <h3>ب. البيانات التجارية والمحاسبية للمتجر (Store Commercial Data)</h3>
+      <ul>
+        <li><strong>المنتجات والمخزون:</strong> أسماء السلع، الأكواد، الباركود، أسعار الشراء، أسعار البيع، الكميات المتوفرة، وحدود تنبيه النفاد.</li>
+        <li><strong>المبيعات والفواتير:</strong> أرقام الفواتير، التواريخ، الأصناف المشتراة، طرق الدفع (نقدي/آجل)، الخصومات، والمرتجعات.</li>
+        <li><strong>المصروفات:</strong> قيم وبنود النفقات اليومية وتصنيفاتها (إيجار، رواتب، صيانة، فواتير تشغيل).</li>
+      </ul>
+
+      <h3>ج. بيانات العملاء والموردين الاختيارية (Optional Contact Fields)</h3>
+      <ul>
+        <li>اسم العميل أو المورد ورقم الهاتف الذي يختاره التاجر يدوياً لحفظه ضمن سجلات الفاتورة أو كشف الحساب.</li>
+      </ul>
+
+      <h3>د. بيانات الأداء والتشخيص التقني (Diagnostics &amp; Logs)</h3>
+      <ul>
+        <li>سجلات فنية محلية لحالة طابور المزامنة وأخطاء استقرار النظام لتفادي تكرار العمليات. هذه السجلات تقنية بحتة ولا تحوي أي أرقام بطاقات بنكية أو أسرار خاصة.</li>
+      </ul>
+
+      <div class="highlight-box">
+        <strong>إقرار صريح بما لا نجمعه (Zero Sensitive Data Collection):</strong>
+        <br>
+        • ❌ لا نطلب ولا نصل للموقع الجغرافي الدقيق أو التقريبي (GPS/Location).
+        <br>
+        • ❌ لا نصل إلى سجل الأسماء أو جهات الاتصال الخاصة بهاتفك الشخصي (No Read Contacts).
+        <br>
+        • ❌ لا نصل إلى معرض الصور الشخصية أو الفيديو أو الملفات العامة خارج مجلدات التطبيق (No External Media Access).
+        <br>
+        • ❌ لا نجمع أي بيانات لبطاقات الدفع أو الحسابات المصرفية (التطبيق يسجل المعاملات دفترياً فقط ولا يعمل كبوابة دفع إلكتروني).
+        <br>
+        • ❌ لا نستخدم معرف الإعلانات (No Advertising ID) ولا نتتبع نشاط المستخدم عبر التطبيقات الأخرى.
+      </div>
+    </section>
+
+    <!-- القسم الثالث: أغراض الاستخدام -->
+    <section id="data-usage" class="section">
+      <h2>3. أغراض استخدام ومعالجة البيانات (Purpose of Data Use)</h2>
+      <p>تُعالج البيانات حصرياً للأغراض التشغيلية المرتبطة بخدمة المتجر:</p>
+      <ol>
+        <li><strong>تمكين الوظائف الأساسية لنقاط البيع (App Functionality):</strong> إصدار وطباعة فواتير المبيعات، خصم المخزون بدقة ذرية، وحساب صافي الأرباح وتكلفة البضاعة المباعة.</li>
+        <li><strong>إتاحة التشغيل دون إنترنت (Offline Availability):</strong> حفظ العمليات محلياً على الهاتف بما يضمن استمرارية التجارة حتى في حالات انقطاع الشبكة.</li>
+        <li><strong>المزامنة السحابية الآمنة:</strong> حفظ نسخة احتياطية مشفرة من سجلات المحل على الخادم السحابي عند توفر الإنترنت، ومنع الفقدان أو التلف المفاجئ للهاتف.</li>
+        <li><strong>تأمين الدخول وتعدد المستخدمين:</strong> التحقق من هوية الكاشير أو المالك وحصر كل موظف في الصلاحيات المخصصة له.</li>
+      </ol>
+    </section>
+
+    <!-- القسم الرابع: أمن البيانات والتخزين -->
+    <section id="security-storage" class="section">
+      <h2>4. أمن البيانات والتخزين المعتمد (Security &amp; Storage)</h2>
+      <p>نطبق ضوابط هندسية صارمة لحماية السجلات على الأجهزة وفي السحابة:</p>
+      
+      <div class="table-container">
+        <table>
+          <thead>
+            <tr>
+              <th>المجال</th>
+              <th>التقنية المعتمدة</th>
+              <th>مستوى الحماية المطبق</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td><strong>التخزين المحلي بالهاتف</strong></td>
+              <td>SQLite Database داخل بيئة Android Sandbox المحمية</td>
+              <td>عزل تام يمنع أي تطبيق آخر مثبت على الجهاز من الوصول لملف قاعدة البيانات.</td>
+            </tr>
+            <tr>
+              <td><strong>الاتصال بالخوادم السحابية</strong></td>
+              <td>HTTPS / TLS 1.3</td>
+              <td>تشفير كامل أثناء النقل (Encryption in Transit) لكافة حركات المزامنة والمصادقة.</td>
+            </tr>
+            <tr>
+              <td><strong>الخوادم السحابية</strong></td>
+              <td>PostgreSQL عبر Supabase Inc.</td>
+              <td>تشفير أثناء التخزين (Encryption at Rest) مع حماية الهوية ومطابقة المعايير الدولية.</td>
+            </tr>
+            <tr>
+              <td><strong>عزل بيانات المتاجر</strong></td>
+              <td>Row Level Security (RLS)</td>
+              <td>سياسات أمان صارمة تضمن استحالة وصول أي متجر أو مستخدم لبيانات متجر آخر على نفس الخادم.</td>
+            </tr>
+            <tr>
+              <td><strong>النسخ الاحتياطي المحلي</strong></td>
+              <td>تصدير قاعدة البيانات (.db)</td>
+              <td>ملف محلي يختاره التاجر ويبقى بالكامل تحت تحكمه وحيازته الفيزيائية.</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+    <!-- القسم الخامس: مشاركة البيانات -->
+    <section id="third-parties" class="section">
+      <h2>5. مشاركة البيانات والأطراف الثالثة (Third-Party Disclosure)</h2>
+      <p>
+        <strong>نحن لا نبيع، ولا نؤجر، ولا نتاجر ببياناتك التجارية أو الشخصية أو بيانات متجرك لأي أطراف ثالثة أو شركات إعلانية تحت أي ظرف.</strong>
+      </p>
+      <p>الطرف الثالث الوحيد المشترك في تقديم الخدمة هو مزود البنية التحتية السحابية التقنية:</p>
+      <ul>
+        <li>
+          <strong>Supabase Inc.:</strong> مزود خدمة قواعد البيانات السحابية والمصادقة الأمنية، وتخضع خوادمه لبروتوكولات الأمان القياسية (SOC 2 Type II، معايير GDPR الأوروبية)، وتقتصر مهمته على الاستضافة الآمنة للبيانات المشفرة دون أي حق في قراءتها أو استغلالها تجارياً.
+        </li>
+      </ul>
+      <p>التطبيق خالٍ تماماً من أي مكتبات برمجية إعلانية (No AdMob, No Facebook Ads SDK) أو أدوات تتبع السلوك التسويقي.</p>
+    </section>
+
+    <!-- القسم السادس: حذف الحساب والبيانات -->
+    <section id="deletion" class="section">
+      <h2>6. حقوق المستخدم وسياسة حذف البيانات والحساب (Data Retention &amp; Deletion)</h2>
+      <p>
+        يمتلك صاحب المتجر والمستخدم كامل السيادة على بياناته، وله الحق في طلب حذفها كلياً أو جزئياً في أي وقت:
+      </p>
+
+      <h3>أ. حذف البيانات المحلية (Local Data Deletion)</h3>
+      <p>
+        يمكن مسح كافة السجلات المخزنة محلياً على الهاتف فوراً وبشكل نهائي عن طريق الدخول إلى:
+        <br>
+        <code>إعدادات الهاتف (Android Settings) &larr; التطبيقات (Apps) &larr; I Tech &larr; التخزين (Storage) &larr; مسح التخزين / مسح البيانات (Clear Data)</code>
+        أو عبر إلغاء تثبيت التطبيق.
+      </p>
+
+      <h3>ب. طلب شطب الحساب والبيانات السحابية نهائياً (Account &amp; Cloud Data Deletion)</h3>
+      <p>
+        وفقاً لإرشادات Google Play الرسمية لعام 2024+، نتيح لمالك المتجر شطب حسابه وكافة بياناته المحاسبية والتجارية السحابية نهائياً:
+      </p>
+      
+      <div class="highlight-box">
+        <strong>طريقة تقديم طلب الحذف:</strong>
+        <ol>
+          <li>إرسال رسالة من البريد الإلكتروني المعتمد للمتجر إلى: <a href="mailto:support@itech-eg.com">support@itech-eg.com</a> أو <a href="mailto:privacy@itech-eg.com">privacy@itech-eg.com</a></li>
+          <li>ذكر اسم المستخدم ومعرف المتجر (<code>shop_id</code>) مع عبارة «طلب شطب الحساب وحذف البيانات نهائياً».</li>
+          <li>يتم فحص الطلب والتحقق من هوية المالك، ومن ثم مسح وتطهير كافة السجلات المرتبطة بالمتجر (المنتجات، المبيعات، المصروفات، وأعضاء المتجر) خلال <strong>مدة أقصاها 14 يوم عمل</strong>.</li>
+        </ol>
+      </div>
+
+      <div class="warning-box">
+        <strong>تنبيه هام بشأن الحذف النهائي:</strong>
+        بمجرد تأكيد طلب الشطب السحابي، لا يمكن استرجاع السجلات نهائياً من الخوادم. يُنصح بأخذ نسخة احتياطية محلية من داخل التطبيق قبل طلب الحذف إذا كنت بحاجة للاحتفاظ بسجلاتك الضريبية أو الدفترية.
+      </div>
+    </section>
+
+    <!-- القسم السابع: الامتثال لسياسات Google Play -->
+    <section id="google-play" class="section">
+      <h2>7. الامتثال لسياسات متجر Google Play وحماية الأطفال</h2>
+      <ul>
+        <li>
+          <strong>توافق نموذج أمان البيانات (Data Safety Compliance):</strong>
+          تتطابق هذه السياسة بنسبة 100% مع الإقرارات الفنية المقدمة في Google Play Console ومع مصفوفة أمان التطبيق (Data Safety Matrix).
+        </li>
+        <li>
+          <strong>حماية خصوصية الأطفال (COPPA &amp; Children's Privacy):</strong>
+          هذا التطبيق أداة مهنية موجهة حصراً لأصحاب الأنشطة التجارية والتجزئة والبالغين (18 عاماً فما فوق). التطبيق لا يستهدف ولا يجمع أو يطلب أي بيانات من الأطفال دون سن 13 عاماً (أو السن القانوني في بلدك).
+        </li>
+      </ul>
+    </section>
+
+    <!-- القسم الثامن: بيانات الاتصال -->
+    <section id="contact" class="section">
+      <h2>8. بيانات الاتصال والتواصل الرسمي (Contact Information)</h2>
+      <p>
+        إذا كان لديك أي سؤال أو استفسار أو رغبة في تقديم طلب بخصوص سياسة الخصوصية أو بياناتك المحفوظة، يرجى التواصل معنا عبر القنوات الرسمية التالية:
+      </p>
+
+      <div class="contact-card">
+        <h3 style="color: var(--primary); margin-bottom: 12px;">بيانات مطوّر الخدمة والجهة المسؤولة:</h3>
+        <ul class="contact-list">
+          <li>
+            <strong>اسم التطبيق الرسمي:</strong>
+            <span>I Tech لإدارة المحلات — I-Tech Store Management</span>
+          </li>
+          <li>
+            <strong>معرّف الحزمة (Package ID):</strong>
+            <span><code>com.itech.storemanagement</code></span>
+          </li>
+          <li>
+            <strong>المطوّر المسؤول:</strong>
+            <span>Islam Saber — I Tech للتكنولوجيا</span>
+          </li>
+          <li>
+            <strong>البريد الإلكتروني للدعم:</strong>
+            <span><a href="mailto:support@itech-eg.com">support@itech-eg.com</a></span>
+          </li>
+          <li>
+            <strong>البريد الإلكتروني للخصوصية:</strong>
+            <span><a href="mailto:privacy@itech-eg.com">privacy@itech-eg.com</a></span>
+          </li>
+          <li>
+            <strong>هاتف / واتساب الدعم الفني:</strong>
+            <span dir="ltr"><a href="tel:+201014900211">+20 101 490 0211</a></span>
+          </li>
+          <li>
+            <strong>الموقع الرسمي:</strong>
+            <span><a href="https://itech-eg.com" target="_blank" rel="noopener">https://itech-eg.com</a></span>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- التذييل -->
+  <footer class="footer">
+    <div class="header-container">
+      <p><strong>I Tech لإدارة المحلات — I-Tech Store Management</strong></p>
+      <p>كافة الحقوق محفوظة © 2026 I Tech للتكنولوجيا والأنظمة الذكية.</p>
+      <p style="font-size: 12px; color: #64748B; margin-top: 6px;">
+        صفحة سياسة الخصوصية العامة المعتمدة لمتجر Google Play | الرابط دائم ومتاح علنياً بدون تسجيل دخول.
+      </p>
+    </div>
+  </footer>
+
+</body>
+</html>
